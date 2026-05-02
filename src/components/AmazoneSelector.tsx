@@ -56,8 +56,8 @@ export const AmazoneSelector = ({ amazones, activeId, onSelect }: Props) => {
 
 const FlowerSelector = ({ amazones, activeId, onSelect }: Props) => {
   const [hoverId, setHoverId] = useState<string | null>(null);
-  const cx = 200;
-  const cy = 200;
+  const cx = 250;
+  const cy = 250;
   const petalRx = 22;
   const petalRy = 95;
   const petalCenterOffset = 95;

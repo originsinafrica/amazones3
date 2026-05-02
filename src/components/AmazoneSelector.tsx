@@ -77,8 +77,8 @@ const FlowerSelector = ({ amazones, activeId, onSelect }: Props) => {
   return (
     <div className="flex flex-col items-center pt-2">
       <svg
-        viewBox="0 0 400 400"
-        className="w-[320px] h-[320px] md:w-[400px] md:h-[400px]"
+        viewBox="0 0 500 500"
+        className="w-[400px] h-[400px] md:w-[500px] md:h-[500px]"
         role="group"
         aria-label="Choisir une Amazone via la fleur"
       >

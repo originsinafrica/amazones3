@@ -90,11 +90,12 @@ const FlowerSelector = ({ amazones, activeId, onSelect }: Props) => {
           const firstName = a.name.split(" ")[0];
           const color = petalColors[i % petalColors.length];
 
-          // Position du label à l'extérieur du pétale (sans tourner avec le pétale)
-          const angleRad = (angle * Math.PI) / 180;
-          const labelRadius = petalCenterOffset + petalRy + 14;
-          const lx = cx + Math.cos(angleRad) * labelRadius;
-          const ly = cy + Math.sin(angleRad) * labelRadius;
+          // Position du label à l'extérieur du pétale (le pétale est tourné de angle+90)
+          const petalAngleRad = ((angle + 90) * Math.PI) / 180;
+          const labelRadius = petalCenterOffset + petalRy + 18;
+          const lx = cx + Math.cos(petalAngleRad) * labelRadius;
+          const ly = cy + Math.sin(petalAngleRad) * labelRadius;
+          const angleRad = petalAngleRad;
           // Anchor selon le quadrant
           const anchor =
             Math.abs(Math.cos(angleRad)) < 0.2

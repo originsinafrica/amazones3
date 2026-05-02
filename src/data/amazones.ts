@@ -16,6 +16,7 @@ export type Amazone = {
   role: string;
   region: string;
   portrait: string;
+  bio: string;
   projectTitle: string;
   tagline: string;
   story: string[];
@@ -33,6 +34,7 @@ export const amazones: Amazone[] = [
     role: "Gardienne des semences",
     region: "Vallée du Niger",
     portrait: a1,
+    bio: "Née en 1968 dans un village au bord du fleuve Niger, Aminata a hérité du savoir des semences de sa grand-mère. Pendant trente ans, elle a parcouru les marchés du Sahel pour collecter, échanger et préserver les variétés oubliées. Aujourd'hui, elle forme une nouvelle génération de gardiennes.",
     projectTitle: "La maison des semences anciennes",
     tagline: "Préserver 47 variétés ancestrales menacées de disparition.",
     story: [
@@ -56,6 +58,7 @@ export const amazones: Amazone[] = [
     role: "Maître tisserande",
     region: "Pays Dogon",
     portrait: a2,
+    bio: "Fatou apprend le bogolan à sept ans, sous l'œil exigeant de sa mère. Quarante ans plus tard, elle est l'une des dernières à maîtriser les motifs rituels du pays Dogon. Son atelier est devenu un lieu de résistance silencieuse contre l'uniformisation des textiles industriels.",
     projectTitle: "L'atelier des fils retrouvés",
     tagline: "Transmettre l'art du bogolan à la nouvelle génération.",
     story: [
@@ -77,6 +80,7 @@ export const amazones: Amazone[] = [
     role: "Guérisseuse traditionnelle",
     region: "Forêt de Ziama",
     portrait: a3,
+    bio: "Septuagénaire au regard clair, Mariam connaît plus de deux cents plantes de la forêt de Ziama. Initiée par son père, ancien chasseur-guérisseur, elle a soigné trois générations de villageois. Sa hantise : que ce savoir s'éteigne avec elle.",
     projectTitle: "Le jardin des plantes qui soignent",
     tagline: "Cataloguer 200 plantes médicinales avant qu'elles ne disparaissent.",
     story: [
@@ -95,6 +99,7 @@ export const amazones: Amazone[] = [
     role: "Agricultrice régénérative",
     region: "Plateau du Fouta",
     portrait: a4,
+    bio: "Kadiatou a quitté Conakry à 25 ans pour reprendre les terres familiales du Fouta-Djalon. Formée à l'agroécologie au Sénégal, elle expérimente depuis dix ans des techniques de reboisement qui réconcilient productivité agricole et résilience climatique.",
     projectTitle: "Mille arbres pour la rivière",
     tagline: "Reboiser les berges asséchées de la rivière Bafing.",
     story: [
@@ -113,6 +118,7 @@ export const amazones: Amazone[] = [
     role: "Éducatrice",
     region: "Conakry",
     portrait: a5,
+    bio: "Institutrice en zone rurale pendant vingt ans, Aïssatou a vu trop d'enfants abandonner l'école faute de livres. Elle imagine la bibliothèque mobile en 2022 ; deux ans plus tard, sa charrette dessert quinze villages reculés du littoral guinéen.",
     projectTitle: "L'école sous l'arbre à palabres",
     tagline: "Une bibliothèque mobile pour quinze villages isolés.",
     story: [
@@ -131,6 +137,7 @@ export const amazones: Amazone[] = [
     role: "Céramiste",
     region: "Ségou",
     portrait: a6,
+    bio: "Salimata appartient à une lignée de potières bambara qui remonte à six générations. Formée par sa tante à Ségou, elle façonne des poteries rituelles que les anciens utilisent encore lors des cérémonies de purification. Elle craint que les fours collectifs ne disparaissent avant qu'elle n'ait pu transmettre.",
     projectTitle: "La terre qui se souvient",
     tagline: "Faire revivre l'art des poteries rituelles bambara.",
     story: [
@@ -149,6 +156,7 @@ export const amazones: Amazone[] = [
     role: "Conteuse",
     region: "Tombouctou",
     portrait: a7,
+    bio: "Nafissatou est griotte de père en fille. Voix ample, mémoire vertigineuse, elle conserve dans sa tête plus de cinq cents contes, proverbes et généalogies. Depuis 2020, elle parcourt le nord du Mali avec un enregistreur pour collecter les voix des plus anciens.",
     projectTitle: "Les voix qu'on n'entend plus",
     tagline: "Enregistrer cent contes oraux avant qu'ils ne s'éteignent.",
     story: [
@@ -167,6 +175,7 @@ export const amazones: Amazone[] = [
     role: "Danseuse rituelle",
     region: "Bamako",
     portrait: a8,
+    bio: "Hawa danse depuis qu'elle sait marcher. Initiée aux danses sacrées par sa mère, prêtresse d'un culte de possession, elle enseigne aujourd'hui à Bamako des chorégraphies anciennes que les écoles modernes ne transmettent plus. Pour elle, chaque geste est une prière.",
     projectTitle: "Le corps comme mémoire",
     tagline: "Une école de danses sacrées pour jeunes filles.",
     story: [

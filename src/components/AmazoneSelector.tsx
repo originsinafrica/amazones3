@@ -56,8 +56,8 @@ export const AmazoneSelector = ({ amazones, activeId, onSelect }: Props) => {
 
 const FlowerSelector = ({ amazones, activeId, onSelect }: Props) => {
   const [hoverId, setHoverId] = useState<string | null>(null);
-  const cx = 200;
-  const cy = 200;
+  const cx = 250;
+  const cy = 250;
   const petalRx = 22;
   const petalRy = 95;
   const petalCenterOffset = 95;
@@ -77,8 +77,8 @@ const FlowerSelector = ({ amazones, activeId, onSelect }: Props) => {
   return (
     <div className="flex flex-col items-center pt-2">
       <svg
-        viewBox="0 0 400 400"
-        className="w-[320px] h-[320px] md:w-[400px] md:h-[400px]"
+        viewBox="0 0 500 500"
+        className="w-[400px] h-[400px] md:w-[500px] md:h-[500px]"
         role="group"
         aria-label="Choisir une Amazone via la fleur"
       >

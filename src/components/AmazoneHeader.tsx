@@ -11,34 +11,14 @@ export const AmazoneHeader = ({ amazone }: Props) => {
       className="grid grid-cols-1 lg:grid-cols-12 gap-px bg-hairline animate-fade-in"
     >
       <div className="lg:col-span-5 bg-background overflow-hidden">
-        <div className="grid grid-cols-2 gap-px bg-hairline">
-          <div className="col-span-2 aspect-[4/3] overflow-hidden bg-background">
-            <img
-              src={amazone.portrait}
-              alt={`Portrait de ${amazone.name}`}
-              width={640}
-              height={480}
-              className="w-full h-full object-cover animate-scale-in"
-            />
-          </div>
-          {amazone.gallery[0] && (
-            <div className="aspect-square overflow-hidden bg-background">
-              <img
-                src={amazone.gallery[0].src}
-                alt={amazone.gallery[0].caption}
-                className="w-full h-full object-cover animate-scale-in"
-              />
-            </div>
-          )}
-          {amazone.gallery[1] && (
-            <div className="aspect-square overflow-hidden bg-background">
-              <img
-                src={amazone.gallery[1].src}
-                alt={amazone.gallery[1].caption}
-                className="w-full h-full object-cover animate-scale-in"
-              />
-            </div>
-          )}
+        <div className="aspect-[4/5] overflow-hidden bg-background">
+          <img
+            src={amazone.portrait}
+            alt={`Portrait de ${amazone.name}`}
+            width={640}
+            height={800}
+            className="w-full h-full object-cover animate-scale-in"
+          />
         </div>
       </div>
       <div className="lg:col-span-7 bg-background flex flex-col justify-between p-8 lg:p-14">
@@ -55,6 +35,9 @@ export const AmazoneHeader = ({ amazone }: Props) => {
           </h2>
           <p className="mt-6 font-serif italic text-xl text-muted-foreground">
             {amazone.role}
+          </p>
+          <p className="mt-8 text-[15px] leading-[1.8] text-foreground/85 max-w-md">
+            {amazone.bio}
           </p>
         </div>
         <div className="hairline-t pt-6 mt-12">

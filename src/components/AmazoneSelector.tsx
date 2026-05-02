@@ -139,20 +139,22 @@ const FlowerSelector = ({ amazones, activeId, onSelect }: Props) => {
                   <title>{a.name}</title>
                 </ellipse>
               </g>
-              {/* Label à l'extérieur, orienté à l'horizontale */}
-              <text
-                x={lx}
-                y={ly}
-                textAnchor={anchor}
-                dominantBaseline="middle"
-                className="pointer-events-none select-none transition-all duration-300"
-                fontFamily="Cormorant Garamond, serif"
-                fontSize={isOn ? 18 : 15}
-                fontStyle="italic"
-                fill={isOn ? `hsl(${color})` : "hsl(var(--muted-foreground))"}
-              >
-                {firstName}
-              </text>
+              {/* Label visible uniquement pour le pétale actif/survolé */}
+              {isOn && (
+                <text
+                  x={lx}
+                  y={ly}
+                  textAnchor={anchor}
+                  dominantBaseline="middle"
+                  className="pointer-events-none select-none transition-all duration-300"
+                  fontFamily="Cormorant Garamond, serif"
+                  fontSize={18}
+                  fontStyle="italic"
+                  fill={`hsl(${color})`}
+                >
+                  {firstName}
+                </text>
+              )}
             </g>
           );
         })}
